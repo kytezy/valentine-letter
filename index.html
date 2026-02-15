@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>Virtual Valentine's Day Card</title>
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="background-haze"></div>
+        <div class="floating-hearts">
+            <span class="floating-heart" style="--x:5; --delay:0s; --duration:14s; --size:34px; --color:#ff5c8d; --drift:20px;"></span>
+            <span class="floating-heart" style="--x:25; --delay:1s; --duration:18s; --size:26px; --color:#ff4b6b; --drift:-15px;"></span>
+            <span class="floating-heart" style="--x:40; --delay:2s; --duration:16s; --size:22px; --color:#ff8fb8; --drift:10px;"></span>
+            <span class="floating-heart" style="--x:60; --delay:3s; --duration:20s; --size:28px; --color:#ff7599; --drift:-25px;"></span>
+            <span class="floating-heart" style="--x:75; --delay:4s; --duration:17s; --size:20px; --color:#ffc3e1; --drift:15px;"></span>
+            <span class="floating-heart" style="--x:90; --delay:5s; --duration:19s; --size:24px; --color:#ff6f9a; --drift:-20px;"></span>
+        </div>
+        <div class="content-layer">
+            <h1 class="valentine">Hi, please check out my Valentine's e-letter for you!</h1>
+            <div class="envelope-wrapper">
+                <div id="envelope" class="close">
+                    <div class="front flap"></div>
+                    <div class="front pocket"></div>
+                    <div class="letter">
+                        <p class="words line1">Hello there,</p>
+                        <p class="words line2">Will you be my Valentine?</p>
+                        <p class="words line3">Love,</p>
+                        <p class="words line4">Cade</p>
+                    </div>
+                    <div class="flowers">
+                        <span class="flower f1"></span>
+                        <span class="flower f2"></span>
+                        <span class="flower f3"></span>
+                        <span class="flower rose"></span>
+                    </div>
+                    <div class="hearts">
+                        <div class="heart a1"></div>
+                        <div class="heart a2"></div>
+                        <div class="heart a3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="reset">
+                <button id="open">Open</button>
+                <button id="reset">Close</button>
+                <button id="share">Share</button>
+                <p class="share-notice" aria-live="polite"></p>
+            </div>
+        </div>
+        
+        <!-- Script JS -->
+        <script src="./script.js"></script>
+    </body>
+</html>
